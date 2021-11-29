@@ -51,7 +51,9 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         guard let model = try? VNCoreMLModel(for: SqueezeNet().model) else { return }
         let request = VNCoreMLRequest(model: model) { finishRequest, error in
-            print(finishRequest.results)
+            guard let results = finishRequest.results as? [VNClassificationObservation] else { return }
+            guard let firstObservation = results.first else { return }
+            print("first observation identifier: \(firstObservation.identifier)\nfirst observation confidence: \(firstObservation.confidence)" )
         }
         try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
     }
