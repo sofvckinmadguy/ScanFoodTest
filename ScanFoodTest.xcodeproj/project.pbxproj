@@ -13,6 +13,7 @@
 		6097B2592734518F00D09DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6097B2572734518F00D09DBA /* Main.storyboard */; };
 		6097B25B2734519000D09DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6097B25A2734519000D09DBA /* Assets.xcassets */; };
 		6097B25E2734519000D09DBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6097B25C2734519000D09DBA /* LaunchScreen.storyboard */; };
+		6097B2662735223C00D09DBA /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6097B2652735223C00D09DBA /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6097B25A2734519000D09DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6097B25D2734519000D09DBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6097B25F2734519000D09DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6097B2652735223C00D09DBA /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				6097B2512734518F00D09DBA /* AppDelegate.swift */,
 				6097B2532734518F00D09DBA /* SceneDelegate.swift */,
+				6097B2652735223C00D09DBA /* SqueezeNet.mlmodel */,
 				6097B2552734518F00D09DBA /* ViewController.swift */,
 				6097B2572734518F00D09DBA /* Main.storyboard */,
 				6097B25A2734519000D09DBA /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				6097B2562734518F00D09DBA /* ViewController.swift in Sources */,
 				6097B2522734518F00D09DBA /* AppDelegate.swift in Sources */,
 				6097B2542734518F00D09DBA /* SceneDelegate.swift in Sources */,
+				6097B2662735223C00D09DBA /* SqueezeNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
